@@ -1,0 +1,13 @@
+﻿<Window x:Class="PictureFrame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PictureFrame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="{Binding WindowHeight}" Width="{Binding WindowWidth}"
+        MouseRightButtonDown="OnMouseRightButtonDown">
+    <Grid>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="{Binding MainWindow.WindowHeight}" Margin="0,0,0,0" VerticalAlignment="Top" Width="{Binding MainWindow.WindowWidth}" MouseRightButtonDown="OnMouseRightButtonDown"/>
+    </Grid>
+</Window>
